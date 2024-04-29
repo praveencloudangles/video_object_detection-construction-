@@ -30,7 +30,7 @@ pipeline{
 
             steps{
 
-                sh 'python3.10 annot2xml.py'
+                sh 'python3.10 anoot2xml.py'
 
             }
 
