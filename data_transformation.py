@@ -290,7 +290,7 @@ def transform_data():
     # Create datasets
     train_dataset = CustomDataset(os.path.join(os.getcwd(),"construction_video_OD/train/images/"),os.path.join(os.getcwd(),"construction_video_OD/train/annotations/"), os.path.join(os.getcwd(),"construction_video_OD/train/labels/"), "construction_video_OD", IMAGE_WIDTH, IMAGE_HEIGHT, classes, get_train_transform())
     print("one-------------",train_dataset)
-    valid_dataset = CustomDataset(os.path.join(os.getcwd(),"construction_video_OD/val/images/"),os.path.join(os.getcwd(),"construction_video_OD/valid/annotations/"), os.path.join(os.getcwd(),"construction_video_OD/valid/labels/"), "construction_video_OD", IMAGE_WIDTH, IMAGE_HEIGHT, classes, get_valid_transform())
+    valid_dataset = CustomDataset(os.path.join(os.getcwd(),"construction_video_OD/valid/images/"),os.path.join(os.getcwd(),"construction_video_OD/valid/annotations/"), os.path.join(os.getcwd(),"construction_video_OD/valid/labels/"), "construction_video_OD", IMAGE_WIDTH, IMAGE_HEIGHT, classes, get_valid_transform())
     print("-------------",valid_dataset)
     i, a = train_dataset[0]
     print("iiiiii:",i)
